@@ -2,12 +2,24 @@
 
 function Multiplo($x){
     if ($x % 4 ===  0){
-        echo "True";
-        return true;
+        return "true";
     }else{
-        echo "False";
-        return false;
+        return "False";
     }
 }
-$valor = readline("Digite um valor: ");
-Multiplo($valor);
+$numero = readline("Digite o valor ");
+$y = Multiplo($numero);
+echo $y;
+
+function ParImpar($x){
+        if($x % 2 === 0 ){
+            
+            return "Par";
+        }else{
+            
+            return "Impar";
+        }    
+    }
+$numero2 = readline("Digite um valor ");
+$z = ParImpar($numero2);
+echo $z;
