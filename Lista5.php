@@ -22,6 +22,25 @@ function Multiplo($x){
         return "False";
     }
 }
+function DivisivelporA($a, $b, $c) {
+    $soma = 0;
+    for ($i = $b; $i <= $c; $i++) {
+        if ($i % $a == 0) {
+            $soma += $i;
+        }
+    }
+    return $soma;
+}
+function calculaPesoIdeal($altura, $sexo) {
+    if ($sexo == "homem") {
+        return 72.7 * $altura - 58;
+    } elseif ($sexo == "mulher") {
+        return 62.1 * $altura - 44.7;
+    } else {
+        return "Sexo inválido. Use 'homem' ou 'mulher'.";
+    }
+}
+
 //1
 $numero = readline("Digite o valor ");
 $y = Multiplo($numero);
@@ -37,4 +56,13 @@ $y = readline("Digite o valor de y ")-1;
 $nb = num($x, $y);
 echo "A soma dos valores internos e $nb";
 
+//4
 
+$a = (int)readline("Digite um valor ");
+$b = (int)readline("Digite o valor de b ");
+$c = (int)readline("Digite o valor de c ");
+echo "Soma dos números divisíveis por $a entre $b e $c: " . DivisivelporA($a, $b, $c);
+
+$altura = (float)readline("Digite a altura em metros: ");
+$sexo = (string)readline("Digite o sexo (homem ou mulher): ");
+echo "Peso ideal para um $sexo de altura $altura: " . calculaPesoIdeal($altura, $sexo) . " kg";
