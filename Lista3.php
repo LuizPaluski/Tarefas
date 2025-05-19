@@ -2,8 +2,7 @@
 
 $num = 0;
 
-while($num < 10){
-    $num + 1;
+while($num < 10){;
     $num ++;
 }
 echo "o valor e $num
@@ -24,7 +23,7 @@ echo "A media dos valores e $media
 $adicao = 0;
 $valores = 0;
 for($i = 0; $i < 10; $i++){
-    $valores = readline("Digite o valor: ");
+    $valores = (int)readline("Digite o valor: ");
     if($valores > 0){
         $adicao += $valores;
     }
@@ -51,12 +50,32 @@ echo "A media dos valores e $media ";
 
 
 //5
-for($i = 15; $i >= 0; $i--){
-    if($i > 0){
-        echo "O valor e $i ";
+$maior = null;
+$menor = null;
+
+for (;;) {
+    $valor = (int) readline("Digite um valor inteiro(e 0 para sair): ");
+    
+    if ($valor == 0) {
+        break;
+    }
+    
+    if ($maior === null || $valor > $maior) {
+        $maior = $valor;
+    }
+    
+    if ($menor === null || $valor < $menor) {
+        $menor = $valor;
     }
 }
- 
+
+if ($maior !== null && $menor !== null) {
+    echo "Maior valor: $maior";
+    echo "Menor valor: $menor";
+} else {
+    echo "Nenhum valor foi informado.";
+}
+
 
 
 
