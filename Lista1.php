@@ -7,7 +7,7 @@ $resto = $dividendo % $divisor;
 
 echo "a divisao de $dividendo por $divisor,e $quociente, e o resto $resto";
 
-//media aritimetica
+//media pon
 $num = [12, 3, 5, 4];
 $soma = $num[0] + $num[1] + $num[2] + $num[3];
 $ponderada = [1, 2, 3, 4];

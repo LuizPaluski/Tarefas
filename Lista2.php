@@ -71,16 +71,16 @@ elseif($verificador < 16 ){
 
 $idade = readline("Sua idade: ");
 
-if (is_string($idade >= 18)){
+if ($idade >= 18){
     echo "Categoria senior ";
 }
-elseif (is_string(14 != $idade >= 17)){
+elseif (14 != $idade >= 17){
     echo "Categoria juvenil B ";
 }
-elseif (is_int(8 != $idade >= 10 )){
+elseif (8 != $idade >= 10 ){
     echo "Categoria juvenil A ";
 }
-elseif( is_int(5 != $idade >= 7)){
+elseif( 5 != $idade >= 7){
     echo "Categoria infantil A ";
 }
 
