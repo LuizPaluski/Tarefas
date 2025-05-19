@@ -58,9 +58,9 @@ echo "A soma dos valores internos e $nb";
 
 //4
 
-$a = 2;
-$b = 5;
-$c = 10;
+$a = (int)readline("Digite um valor ");
+$b = (int)readline("Digite o valor de b ");
+$c = (int)readline("Digite o valor de c ");
 echo "Soma dos números divisíveis por $a entre $b e $c: " . DivisivelporA($a, $b, $c);
 
 $altura = (float)readline("Digite a altura em metros: ");
