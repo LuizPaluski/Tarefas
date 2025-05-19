@@ -37,7 +37,7 @@ function calculaPesoIdeal($altura, $sexo) {
     } elseif ($sexo == "mulher") {
         return 62.1 * $altura - 44.7;
     } else {
-        return "Sexo inválido. Use 'homem' ou 'mulher'.";
+        return "Digite 'homem' ou 'mulher'.";
     }
 }
 
