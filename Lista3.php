@@ -54,7 +54,7 @@ $maior = null;
 $menor = null;
 
 for (;;) {
-    $valor = (int) readline("Digite um valor inteiro(e 0 para sair): ");
+    $valor = (int)readline("Digite um valor inteiro(e 0 para sair): ");
     
     if ($valor == 0) {
         break;
@@ -72,8 +72,6 @@ for (;;) {
 if ($maior !== null && $menor !== null) {
     echo "Maior valor: $maior";
     echo "Menor valor: $menor";
-} else {
-    echo "Nenhum valor foi informado.";
 }
 
 
