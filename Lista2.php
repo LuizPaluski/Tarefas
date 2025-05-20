@@ -55,7 +55,8 @@ else{
 //Verificador de idade
 
 $anoNascimento = readline("Ano de Nascimento: ");
-$verificador = $anoNascimento - 2025;
+$ano = date("Y");
+$verificador = $anoNascimento - $ano;
 
 if ($verificador >= 18){
     echo "Ja pode tirar a carteira! ";
