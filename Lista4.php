@@ -1,4 +1,6 @@
 <?php
+// 1
+
 $numeros = [];
 for ($i = 1; $i <= 10; $i++) {
     $numeros[] = $i * 5;
@@ -33,10 +35,10 @@ for ($i = 0; $i < 10; $i++) {
     }
 }
 
-echo "Quantidade de positivos: $positivos\n";
-echo "Quantidade de negativos: $negativos\n";
-echo "Quantidade de pares: $pares\n";
-echo "Quantidade de ímpares: $impares\n";
+echo "Quantidade de positivos: $positivos";
+echo "Quantidade de negativos: $negativos";
+echo "Quantidade de pares: $pares";
+echo "Quantidade de ímpares: $impares";
 
 // 3 
 
