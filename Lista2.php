@@ -24,7 +24,7 @@ else {
     echo "E negativo!";
 }
 //Verificador de preco de maçãs
-$macascompradas = readline("Quantas maçãs voce comprou? ");
+$macascompradas = (int)readline("Quantas maçãs voce comprou? ");
 
 if  ($macascompradas > 12){
     $preco = $macascompradas * 1.00;
@@ -39,8 +39,8 @@ else {
 
 //verificar as notas de 1a e 2a 
 
-$nota1 = readline("Digite a nota 1a: ");
-$nota2 = readline("Digite a nota 2a: ");
+$nota1 = (int)readline("Digite a nota 1a: ");
+$nota2 = (int)readline("Digite a nota 2a: ");
 $media = ($nota1 + $nota2) / 2;
 
 if ($media >= 6){
@@ -54,7 +54,7 @@ else{
 
 //Verificador de idade
 
-$anoNascimento = readline("Ano de Nascimento: ");
+$anoNascimento = (int)readline("Ano de Nascimento: ");
 $ano = date("Y");
 $verificador = $anoNascimento - $ano;
 
@@ -70,7 +70,7 @@ elseif($verificador < 16 ){
 
 
 
-$idade = readline("Sua idade: ");
+$idade = (int)readline("Sua idade: ");
 
 if ($idade >= 18){
     echo "Categoria senior ";
